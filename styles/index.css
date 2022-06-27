@@ -5,20 +5,24 @@ main{
     /* grid-template-areas:
     "latest aside"
     "others"; */
-    grid-template-rows: 2fr 1fr;
-    grid-template-columns: 3fr 1fr;
-    column-gap: 30px;
+
+    grid-template-columns: 2.5fr 1.5fr;
+    grid-template-areas:
+    "latest aside"
+    "others others";
+    grid-column-gap: 30px;
+    grid-row-gap: 64px;
 }
 
 .latestPost{
-    grid-area: 1;
+    grid-area: latest;
 }
 
 .postImg {
     margin-bottom: 16px;
 }
 
-article a {
+.articleBox a, .latestPost a, .postInfo {
     width: 100%;
     max-width: 670px;
     text-decoration: none;
@@ -38,7 +42,7 @@ article a {
 }
 
 .asidePosts{
-    grid-area: 1;
+    grid-area: aside;
 }
 
 .asidePosts .postInfo{
@@ -55,5 +59,23 @@ article a {
 }
 
 .others{
-    grid-area: 2;
+    grid-area: others;
+    flex-wrap: wrap;
+}
+
+.others .articleBox{
+    flex: 1
+}
+
+.others .articleBox img{
+    width: 100%;
+}
+
+.others .articleBox .postInfo{
+    gap: 8px;
+    margin: 0;
+}
+
+.postInfo p{
+    margin: 0;
 }
