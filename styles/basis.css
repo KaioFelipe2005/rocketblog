@@ -153,12 +153,12 @@ section a{
     align-items: center;
 }
 
-section a img{
+header section a img{
     margin-left: 7px;
     transition: .2s;
 }
 
-section a:hover img {
+header section a:hover img {
     margin-left: 10px;
 }
 
