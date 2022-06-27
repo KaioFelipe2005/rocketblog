@@ -10,10 +10,11 @@
     
     <link rel="stylesheet" href="../styles/index.css">
     <link rel="stylesheet" href="../styles/basis.css">
+    <link rel="stylesheet" href="../styles/footer.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;400&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header >
@@ -48,7 +49,7 @@
     </header>
 
     <main class="wrapper">
-        <article class="latestPost">
+        <div class="latestPost">
             <a href="" class="column">
                 <img class="postImg" src="/assets/post-1.png" alt="Capa do post-1">
                 <div class="postInfo">
@@ -57,9 +58,9 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique. Sed volutpat aenean.</p>
                 </div>
             </a>
-        </article>
+        </div>
         <aside class="asidePosts">
-            <article>
+            <div class="articleBox">
                 <a href="#" class="column">
                     <div class="postInfo">
                         <span>Janeiro 04, 2022</span>
@@ -67,8 +68,8 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique.</p>
                     </div>
                 </a>
-            </article>
-            <article>
+            </div>
+            <div class="articleBox">
                 <a href="#" class="column">
                     <div class="postInfo">
                         <span>Janeiro 04, 2022</span>
@@ -76,10 +77,10 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. </p>
                     </div>
                 </a>
-            </article>
+            </div>
         </aside>
         <section class="row others">
-            <article class="flex1">
+            <div class="flex1 articleBox">
                 <a href="" class="column">
                     <img class="postImg" src="/assets/post-2.png" alt="Capa do post-2">
                     <div class="postInfo">
@@ -88,9 +89,9 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique. </p>
                     </div>
                 </a>
-            </article>
+            </div>
 
-            <article class="flex1">
+            <div class="flex1 articleBox">
                 <a href="" class="column">
                     <img class="postImg" src="/assets/post-3.png" alt="Capa do post-3">
                     <div class="postInfo">
@@ -99,9 +100,9 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique.</p>
                     </div>
                 </a>
-            </article>
+            </div>
 
-            <article class="flex1">
+            <div class="flex1 articleBox">
                 <a href="" class="column">
                     <img class="postImg" src="/assets/post-4.png" alt="Capa do post-4">
                     <div class="postInfo">
@@ -110,12 +111,13 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique.</p>
                     </div>
                 </a>
-            </article>
+            </div>
         </section>
     </main>
 
-    <footer>
-    
+    <footer class="row">
+        <p>This is an exercise and a challenge from RocketSeat, in which we should have built the template previously gave to us by using HTML and CSS only. This is intentionally not responsive.</p>
+        <p>Coded by Kaio Felipe</p>
     </footer>
 </body>
 </html>
