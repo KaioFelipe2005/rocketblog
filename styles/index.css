@@ -49,12 +49,12 @@ main{
     gap: 8px;
 }
 
-.asidePosts article:not(:last-child){
+.asidePosts div:not(:last-child){
     padding-bottom: 25px;
     border-bottom: 1px solid #F2E7FA;
 }
 
-.asidePosts article:not(:first-child){
+.asidePosts div:not(:first-child){
     padding-top: 25px;
 }
 
@@ -78,4 +78,32 @@ main{
 
 .postInfo p{
     margin: 0;
+}
+
+/* Responsivo */
+
+@media (max-width: 920px) {
+
+    .others .articleBox {
+        /* max-width: 40%; */
+        min-width: 40%;
+    }
+
+    .articleBox a, .latestPost a, .postInfo {
+        max-width: 100%;
+    }
+
+    main {
+        grid-template-areas:
+        "latest latest"
+        "aside aside"
+        "others others";
+    }
+
+    aside {
+        border-radius: 5px;
+        background: #fff;
+        padding: 12px;
+        box-shadow: 5px 0px 20px -5px #00000030;
+    }
 }
