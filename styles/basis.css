@@ -126,8 +126,6 @@ header label{
     height: 44px;
     border-radius: 4px;
     overflow: hidden;
-
-    /* justify-content: space-between; */
     grid-area: right;
 }
 
@@ -201,7 +199,7 @@ header section a:hover img {
     border-radius: 10px;
 }
 
-/* Responsive */
+/* Tablets */
 
 @media (min-width: 920px) {
     .desktopHidden {
@@ -213,12 +211,14 @@ header section a:hover img {
     
     .topHeader{
         grid-template-columns: 1fr 1fr 45px;
-    }
-
-    .topHeader nav{
-        position: absolute;
-        visibility: hidden;
-        pointer-events: none;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "up up up"
+        "left middle right";
+        transition: .5s;
+        margin-top: -50px;
+        row-gap: 20px;
+        padding:0;
     }
 
     .labelContainer{
@@ -233,6 +233,56 @@ header section a:hover img {
     }
     .menuToggler{
         justify-content: flex-end;
+        grid-area: right;
+    }
+
+    .topHeader nav{
+        grid-area: up;
+        transition: all .2s;
+        /* padding-bottom: 20px; */
+    }
+
+    .navHidden{
+        transform: rotate3d(1, 0, 0, 90deg);
+        pointer-events: none;
+        visibility: hidden;
+    }
+
+    nav ul li a:hover:before{
+        content: "";
+        display: none;
+        position: relative
+    }
+
+    nav ul li a:hover{
+        background: var(--button-bg);
+        border-radius: 10px;
+    }
+
+}
+
+/* Phones */
+
+@media (max-width: 570px) {
+
+    :root{
+        font-size: 12px;
+    }
+
+    .topHeader{
+        grid-template-columns: 1fr 1fr 35px;
+    }
+
+    .labelContainer label {
+        width: 80%;
+    }
+
+    .labelContainer label input{
+        width: 70%;
+    }
+
+    .labelContainer label button{
+        width: 30%;
     }
 
 }
