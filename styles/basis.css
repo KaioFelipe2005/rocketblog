@@ -43,6 +43,23 @@
     color: var(--button-bg);
   }
 
+  .w100{
+    width: 100%;
+  }
+
+  .wrap{
+    flex-wrap: wrap;
+  }
+
+  .grid{
+    display: grid;
+  }
+
+  .icon i{
+    font-family: "FontAwesome5", "FontAwesomeIcons", "FontAwesome";
+    font-style: normal;
+  }
+
   /* HEADER CSS */
 
 header{
@@ -58,8 +75,16 @@ header{
     padding: 64px 0;
 }
 
+.topHeader {
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "left middle right";
+}
+
 nav{
     justify-content: center;
+    grid-area: middle;
 }
 
 nav ul{
@@ -102,7 +127,12 @@ header label{
     border-radius: 4px;
     overflow: hidden;
 
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    grid-area: right;
+}
+
+.logoTheBlog{
+    grid-area: left;
 }
 
 .labelContainer{
@@ -163,4 +193,46 @@ header section a:hover img {
 
 .commercialText{
     align-items: flex-start;
+}
+
+.commercialIMG img{
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Responsive */
+
+@media (min-width: 920px) {
+    .desktopHidden {
+        display: none;
+    }
+}
+
+@media (max-width: 920px) {
+    
+    .topHeader{
+        grid-template-columns: 1fr 1fr 45px;
+    }
+
+    .topHeader nav{
+        position: absolute;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    .labelContainer{
+        grid-area: middle;
+    }
+
+    .menuToggler i{
+        font-size: 2rem;
+        text-align: center;
+        cursor: pointer;
+        color: var(--light-purple);
+    }
+    .menuToggler{
+        justify-content: flex-end;
+    }
+
 }
