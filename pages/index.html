@@ -15,25 +15,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;400&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.es.gov.br/fonts/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
     <header >
-        <div class="wrapper row">
-            <div class="flex1 row"><img src="../assets/logo.svg" alt="Logo Rocket Blog"></div>
-        <nav class="flex1 row">
-            <ul class="row">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Categorias</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-        <div class="flex1 labelContainer row">
+        <div class="wrapper grid topHeader">
+
+            <div class="row logoTheBlog"><img src="../assets/logo.svg" alt="Logo Rocket Blog"></div>
+            <nav class="row">
+                <ul class="row">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Categorias</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="labelContainer row">
             <label class="row" for="search" id="search">
                 <input type="search" name="search-text" id="search-text" placeholder="Buscar">
                 <button type="submit"><i><img src="../assets/search.svg" alt="Lupa Icon"></i></button>
             </label>
-        </div>
+            </div>
+            <div class="menuToggler desktopHidden icon row"><i class="fa-solid fa-bars"></i></div>
+
         </div>
         
         <section class="wrapper row">
@@ -42,8 +46,8 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae, sed tristique placerat hac. </p>
                 <a href="#" class="row">Ver mais<img src="../assets/arrow-right.svg" alt="Prosseguir"></a>
             </div>
-            <div class="flex1" commercialIMG>
-                <img src="../assets/featured-image.png" alt="Imagem comercial">
+            <div class="flex1 commercialIMG">
+                <img src="../assets/featured-image.png" alt="Imagem comercial" class="w100">
             </div>
         </section>
     </header>
