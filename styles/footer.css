@@ -23,7 +23,7 @@ footer p:last-child{
     font-weight: bold;
 }
 
-@media (max-width: 570px) {
+@media (max-width: 600px) {
     footer {
         flex-direction: columns !important;
     }
