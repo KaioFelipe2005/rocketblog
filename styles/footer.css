@@ -27,7 +27,7 @@ footer p:last-child{
 
 @media (max-width: 600px) {
     footer {
-        flex-direction: columns;
+        flex-direction: column;
         gap: 30px;
     }
     
