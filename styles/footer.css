@@ -22,3 +22,13 @@ footer p:last-child{
     text-align: right;
     font-weight: bold;
 }
+
+@media (max-width: 570px) {
+    footer {
+        flex-direction: columns !important;
+    }
+    
+    footer p:last-child {
+        text-align: center;
+    }
+}
