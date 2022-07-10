@@ -31,7 +31,7 @@ footer p:last-child{
         gap: 30px;
     }
     
-    footer p {
+    footer p, footer p:last-child {
         text-align: center;
     }
 }
